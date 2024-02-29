@@ -1,0 +1,23 @@
+body {
+  background-color: bisque;
+}
+h1 {
+  color: chocolate;
+  font-style: normal;
+  font-family: monospace;
+}
+h2 {
+  color: chocolate;
+  font-family: monospace;
+  font-style: normal;
+}
+button {
+  background-color: burlywood;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  font-family: monospace;
+  margin: 10px;
+}
