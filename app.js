@@ -28,6 +28,10 @@ var quizData = {
     },
   ],
 };
+var btn1 = document.createElement("BUTTON");
+var btn2 = document.createElement("BUTTON");
+var btn3 = document.createElement("BUTTON");
+var btn4 = document.createElement("BUTTON");
 var state = 0; //To know whether name is entered or not
 function saveName() {
   let person = prompt("Enter name to play Quiz", "default");
@@ -54,13 +58,6 @@ function editButton(btn, num, option) {
 }
 function randQuiz() {
   if (state == 1) {
-    var btn1 = document.createElement("BUTTON");
-    var btn2 = document.createElement("BUTTON");
-    var btn3 = document.createElement("BUTTON");
-    var btn4 = document.createElement("BUTTON");
-    state++;
-  }
-  if (state > 1) {
     var num = Math.floor(Math.random() * 5);
     document.getElementById("ques").innerHTML =
       "Q." + quizData.Question[num].question;
