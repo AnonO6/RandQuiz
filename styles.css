@@ -21,3 +21,7 @@ button {
   font-family: monospace;
   margin: 10px;
 }
+input {
+  width: 200px;
+  height: 35px;
+}

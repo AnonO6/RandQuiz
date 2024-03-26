@@ -1,5 +1,5 @@
-// FORTUNE WEBSITE
-var quizData = {
+// Random question data
+const quizData = {
   Question: [
     {
       question: "Which of the following is NOT a primary color?",
@@ -28,14 +28,15 @@ var quizData = {
     },
   ],
 };
+
+//CODE
 var btn1 = document.createElement("BUTTON");
 var btn2 = document.createElement("BUTTON");
 var btn3 = document.createElement("BUTTON");
 var btn4 = document.createElement("BUTTON");
 var state = 0; //To know whether name is entered or not
 function saveName() {
-  let person = prompt("Enter name to play Quiz", "default");
-
+  var person = document.getElementById("myInput").value;
   if (person != null) {
     document.getElementById("demo").innerHTML =
       "Hello " + person + ", Lets begin with the quiz";
